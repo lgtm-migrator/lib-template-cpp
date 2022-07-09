@@ -24,6 +24,6 @@ jobs:
         with:
           # ignore: "F401"
           exclude: "src/ignoreme.py"
-          max-line-length: "100"
+          max-line-length: "80"
           path: "src"
           plugins: "flake8-bugbear==22.1.11 flake8-black"

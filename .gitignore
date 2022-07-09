@@ -35,3 +35,7 @@
 out/
 target/
 build/
+
+# Checks Output
+
+clang*.yml

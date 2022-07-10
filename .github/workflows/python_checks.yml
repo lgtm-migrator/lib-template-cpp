@@ -6,7 +6,7 @@ on:
       - '**.py'
   push:
     branches:
-    - master
+    - main
 
 jobs:
   flake8-lint:

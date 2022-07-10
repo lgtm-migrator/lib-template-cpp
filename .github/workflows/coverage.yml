@@ -34,7 +34,7 @@ jobs:
     - name: publish code coverage to code climate
       env:
         CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
-      if: ${{ github.ref == 'main' }}
+      if: ${{ github.ref == 'refs/heads/main' }}
       run: |
         ./cc-reporter format-coverage build/coverage -t gcov -p $(basename $PWD)
         ./cc-reporter upload-coverage -r "$CC_TEST_REPORTER_ID" -i coverage/codeclimate.json

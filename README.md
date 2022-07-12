@@ -14,6 +14,13 @@
 
 ## Dev
 
+After cloning:
+```sh
+python3 -m pip install -r requirements.txt
+pre-commit install
+pre-commit autoupdate # if needed
+```
+
 To build:
 ```sh
 cd <PROJECT_ROOT_DIR>
@@ -29,5 +36,3 @@ make gcov
 Run `checks.sh` prior to pushing code. Resolve any errors that arise.
 
 `.github/workflows/*.yml` files can be validated at the [actionlint playground](https://rhysd.github.io/actionlint/).
-
-

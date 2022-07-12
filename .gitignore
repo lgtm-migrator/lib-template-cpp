@@ -38,3 +38,5 @@ build/
 
 # Checks Output
 clang*.yml
+compile_commands.json
+coverage/

@@ -10,7 +10,6 @@
 
 [![Language grade: C/C++](https://img.shields.io/lgtm/grade/cpp/g/Trashcat-Robotics/lib-template-cpp.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Trashcat-Robotics/lib-template-cpp/context:cpp)
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/Trashcat-Robotics/lib-template-cpp.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Trashcat-Robotics/lib-template-cpp/context:python)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/ec76771489a475bf74bd/test_coverage)](https://codeclimate.com/github/Trashcat-Robotics/lib-template/test_coverage)
 
 ## Dev
 

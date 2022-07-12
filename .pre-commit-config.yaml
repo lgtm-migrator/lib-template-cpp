@@ -54,7 +54,7 @@ repos:
           "-checks=boost-*,bugprone-*,performance-*,readability-*,portability-*,modernize-*,clang-analyzer-*,cppcoreguidelines-*",
           -p=build/
         ]
-        files: src/*.cpp
+        files: src/*
 
 -   repo: https://github.com/PyCQA/flake8
     rev: 4.0.1

@@ -1,4 +1,4 @@
-#ifndef LIB_H
+#ifndef LIB_H  // NOLINT(llvm-header-guard)
 #define LIB_H
 
 #include <types.h>

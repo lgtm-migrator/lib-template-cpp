@@ -3,6 +3,6 @@
 
 // Demonstrate some basic assertions.
 TEST(LibAddOneTest, Basic) {
-  const U8 x = 5;
-  EXPECT_EQ(lib_add_one(x), x + 1);
+  const U8 tmp = 5;
+  EXPECT_EQ(lib_add_one(tmp), tmp + 1);
 }

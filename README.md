@@ -16,10 +16,17 @@
 
 After cloning:
 ```sh
+sudo apt install clang-tidy gcovr
 python3 -m pip install -r requirements.txt
 pre-commit install
 pre-commit autoupdate # if needed
 ```
+
+`pre-commit` is used to lint this repository. Try `pre-commit run --all-files`.
+- `pre-commit` is a git hook that is automatically called first when `git commit`
+is invoked.
+- Errors will prevent code from being committed.
+
 
 To build:
 ```sh
@@ -32,7 +39,5 @@ make test
 make gcov
 # make clean
 ```
-
-Run `checks.sh` prior to pushing code. Resolve any errors that arise.
 
 `.github/workflows/*.yml` files can be validated at the [actionlint playground](https://rhysd.github.io/actionlint/).

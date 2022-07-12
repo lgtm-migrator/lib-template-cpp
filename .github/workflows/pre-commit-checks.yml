@@ -1,10 +1,13 @@
-name: C++ Checks
+name: Pre Commit Checks
 
 on:
   push:
     branches:
     - main
   pull_request:
+
+env:
+  CC_BINARY: https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
 
 jobs:
   linting:
@@ -15,9 +18,24 @@ jobs:
 
     - name: install dependencies
       run: |
+        sudo apt install gcovr curl
+        wget -O cc-reporter ${{ env.CC_BINARY }}
+        chmod +x ./cc-reporter
         python3 -m pip install -r requirements.txt
         pre-commit autoupdate
         pre-commit install
+        ./cc-reporter before-build
+
+    - name: build & test
+      run: |
+        mkdir coverage
+        mkdir build
+        cd build
+        cmake ..
+        make
+        make test
+        make gcov
+        cd ..
 
     - name: Run pre-commit tests
       run: |

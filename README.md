@@ -1,10 +1,6 @@
 # LIBRARY Template
 
 :warning: Do the following if creating a library! :warning:
-- Add this repository to codeclimate
-- Add the  codeclimate reporter ID as `CC_TEST_REPORTER_ID` in GitHub Webstie
-  - Settings->Secrets->Actions->Repository Secrets
-  - Find the ID in Code Climate Repo Settings -> Test Coverage
 - Replace "lib-template" and "LibraryX" in CMakeLists.txt
 - Replace the repository name in the following badges:
 

@@ -52,10 +52,9 @@ repos:
           -warnings-as-errors=*,
           -header-filter=.*,
           "-checks=boost-*,bugprone-*,performance-*,readability-*,portability-*,modernize-*,clang-analyzer-*,cppcoreguidelines-*",
-          -p=build/,
-          -itest/,
-          -ibuild
+          -p=build/
         ]
+        files: src/*.cpp
 
 -   repo: https://github.com/PyCQA/flake8
     rev: 4.0.1
